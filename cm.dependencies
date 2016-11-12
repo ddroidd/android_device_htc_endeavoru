@@ -1,0 +1,27 @@
+[
+ {
+   "repository": "android_device_htc_tegra3-common",
+   "target_path": "device/htc/tegra3-common",
+   "revision": "cm-13.0"
+ },
+ 
+   {
+    "remote": "github",
+    "repository": "CyanogenMod/android_external_stlport",
+    "target_path": "external/libstlport",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "github",
+    "repository": "android_hardware_ti_wlan" ,
+    "target_path": "hardware/ti/wlan",
+    "revision": "cm-13.0"
+    },
+    {
+    "remote": "github",
+    "repository": "android_hardware_ti_wpan" ,
+    "target_path": "hardware/ti/wpan",
+    "revision": "cm-13.0"
+    }
+  
+]

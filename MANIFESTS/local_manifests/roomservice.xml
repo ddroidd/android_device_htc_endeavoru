@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- AndroidEABI Legacy Toolchain 4.8 -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm" clone-depth="1" remote="aosp" revision="refs/heads/master" />
+  
+  <!-- Other Toolchains
+  <project name="arter97/arm-linux-androideabi-5.1" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1" remote="github" groups="pdk,linux,arm" revision="refs/heads/master" />
+  <project name="arter97/arm-eabi-5.1" path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.1" remote="github" groups="pdk,linux,arm" revision="refs/heads/master" />
+  -->
+
+  <!-- TWRP recovery -->
+  <project name="omnirom/android_bootable_recovery" path="bootable/recovery" remote="github" groups="pdk" revision="refs/heads/android-6.0" />
+  <project name="omnirom/android_external_busybox" path="external/busybox" remote="github" groups="pdk" revision="refs/heads/android-6.0" />
+
+  <!-- TWRP devices -->
+  <!-- HTC (endevoru)
+  <project name="TeamWin/android_device_htc_tegra3-common" path="device/htc/tegra3-common" remote="github" revision="refs/heads/cm-13.0" />
+  <project name="TeamWin/android_kernel_htc_endeavoru" path="kernel/htc/endeavoru" remote="github" groups="pdk" revision="refs/heads/cm-13.0" />
+  <project name="TeamWin/android_device_htc_endeavoru" path="device/htc/endeavoru" remote="github" revision="refs/heads/cm-13.0" />
+  -->
+
+  <!-- Required External Libraries -->
+  <project name="CyanogenMod/android_external_stlport" path="external/libstlport" remote="github" groups="pdk" revision="refs/heads/cm-13.0" />
+
+  <!-- External Utilities -->
+  <project name="jackpotclavin/Android-Blob-Utility" path="external/android-blob-utility" remote="github" revision="refs/heads/master" />
+
+  <!-- HTC vendor blobs -->
+  <project name="Grarak/proprietary_vendor_htc" path="vendor/htc" remote="github" groups="pdk" revision="refs/heads/cm-13.0" />
+
+  <!-- Qualcomm devices (required for endeavoru || OneX -->
+  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" groups="pdk,qcom_msm8960" revision="refs/heads/cm-13.0" />
+  <project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media" remote="github" groups="pdk,qcom_msm8960" revision="refs/heads/cm-13.0" />
+
+  <!-- Kernel Tegra3
+  <project name="kernel/tegra" path="kernel/htc/OneX-3.18-dr" remote="aosp" groups="pdk" revision="refs/heads/android-tegra-dragon-3.18-marshmallow-dr-dragon" />
+  <project name="kernel/tegra" path="kernel/htc/OneX-3.18" remote="aosp" groups="pdk" revision="refs/tags/android-6.0.1_r0.113" />
+  <project name="kernel/tegra" path="kernel/htc/OneX-3.14" remote="aosp" groups="pdk" revision="refs/heads/android-tegra-3.14" />
+  -->
+  <project name="kernel/tegra" path="kernel/htc/OneX-3.14" remote="aosp" groups="pdk" revision="refs/heads/android-tegra-3.14" />
+
+  <!-- Remove mac os -> darwin-x86 support
+  -->
+  <remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+                            
+  <!-- Remove unused devices
+  -->
+  <remove-project name="device/generic/mini-emulator-arm64" />
+  <remove-project name="device/generic/mini-emulator-mips" />
+                        
+  <!-- Remove Intel platform support
+  -->
+  <remove-project name="platform/hardware/intel/audio_media" />
+  <remove-project name="platform/hardware/intel/bootstub" />
+  <remove-project name="platform/hardware/intel/common/bd_prov" />
+  <remove-project name="CyanogenMod/android_hardware_intel_common_libmix" />
+  <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
+  <remove-project name="CyanogenMod/android_hardware_intel_common_libva" />
+  <remove-project name="CyanogenMod/android_hardware_intel_common_libwsbm" />
+  <remove-project name="CyanogenMod/android_hardware_intel_common_omx-components" />
+  <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
+  <remove-project name="CyanogenMod/android_hardware_intel_img_hwcomposer" />
+  <remove-project name="CyanogenMod/android_hardware_intel_img_psb_headers" />
+  <remove-project name="CyanogenMod/android_hardware_intel_img_psb_video" />
+  <remove-project name="platform/hardware/intel/sensors" />
+</manifest>
